@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPhilia 8.0 - College Tech Event</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-[Poppins] bg-gray-900 text-white">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-gray-900/90 backdrop-blur-sm">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-500">TechPhilia<span class="text-white">8.0</span></a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-blue-500 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500 transition-colors">About</a></li>
+                <li><a href="#events" class="hover:text-blue-500 transition-colors">Events</a></li>
+                <li><a href="#schedule" class="hover:text-blue-500 transition-colors">Schedule</a></li>
+                <li><a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-900/95 backdrop-blur-sm">
+            <ul class="px-4 py-4 space-y-4">
+                <li><a href="#home" class="block hover:text-blue-500 transition-colors">Home</a></li>
+                <li><a href="#about" class="block hover:text-blue-500 transition-colors">About</a></li>
+                <li><a href="#events" class="block hover:text-blue-500 transition-colors">Events</a></li>
+                <li><a href="#schedule" class="block hover:text-blue-500 transition-colors">Schedule</a></li>
+                <li><a href="#contact" class="block hover:text-blue-500 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">TechPhilia 8.0</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">The Ultimate Technical Extravaganza</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-calendar text-blue-500"></i>
+                    <span>March 15-17, 2024</span>
+                </div>
+                <div class="hidden md:block text-gray-500">|</div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-location-dot text-blue-500"></i>
+                    <span>College Campus</span>
+                </div>
+            </div>
+            <a href="#register" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors">Register Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">About The Event</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.pexels.com/photos/2182973/pexels-photo-2182973.jpeg" alt="Tech Event" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <p class="text-gray-300 mb-6">TechPhilia 8.0 is the flagship technical festival that brings together the brightest minds in technology. With a legacy of seven successful editions, we're back with an even bigger and better experience.</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 bg-gray-900 rounded-lg">
+                            <i class="fas fa-users text-3xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">1000+ Participants</h3>
+                            <p class="text-gray-400">Expected Attendance</p>
+                        </div>
+                        <div class="text-center p-6 bg-gray-900 rounded-lg">
+                            <i class="fas fa-trophy text-3xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-semibold mb-2">20+ Events</h3>
+                            <p class="text-gray-400">Technical Competitions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Featured Events</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-500/40 to-pink-500/40 p-1 transition-all duration-500 hover:scale-105 hover:from-purple-500/60 hover:to-pink-500/60 card-animate shadow-xl hover:shadow-purple-500/50" data-scroll>
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/90 backdrop-blur-sm border border-purple-500/20">
+                        <div class="relative">
+                            <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg" alt="Fashion Show" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">AMIVOGUE</h3>
+                            <p class="text-gray-300 mb-4">Fashion Show Competition</p>
+                            <p class="text-sm text-gray-400 mb-6">Theme: Be Bold for Change (Indian Attire)</p>
+                            <div class="flex gap-4">
+                                <button class="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white hover:opacity-90 transition-opacity">Info</button>
+                                <button class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white hover:opacity-90 transition-opacity">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-500/40 to-orange-500/40 p-1 transition-all duration-500 hover:scale-105 hover:from-yellow-500/60 hover:to-orange-500/60 card-animate shadow-xl hover:shadow-yellow-500/50" data-scroll>
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/90 backdrop-blur-sm border border-yellow-500/20">
+                        <div class="relative">
+                            <img src="https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg" alt="Debate Competition" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">CLASH OF MIND</h3>
+                            <p class="text-gray-300 mb-4">Debate Competition</p>
+                            <p class="text-sm text-gray-400 mb-6">School & University Level Competition</p>
+                            <div class="flex gap-4">
+                                <button class="px-6 py-2 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full text-white hover:opacity-90 transition-opacity">Info</button>
+                                <button class="px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full text-white hover:opacity-90 transition-opacity">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-500/40 to-teal-500/40 p-1 transition-all duration-500 hover:scale-105 hover:from-green-500/60 hover:to-teal-500/60 card-animate shadow-xl hover:shadow-green-500/50" data-scroll>
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/90 backdrop-blur-sm border border-green-500/20">
+                        <div class="relative">
+                            <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" alt="Poster Making" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-teal-500">POSTEROLIC</h3>
+                            <p class="text-gray-300 mb-4">Poster Making Competition</p>
+                            <p class="text-sm text-gray-400 mb-6">Theme: Heritage & Technology Impact</p>
+                            <div class="flex gap-4">
+                                <button class="px-6 py-2 bg-gradient-to-r from-green-500 to-teal-500 rounded-full text-white hover:opacity-90 transition-opacity">Info</button>
+                                <button class="px-6 py-2 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full text-white hover:opacity-90 transition-opacity">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Event Schedule</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Day 1 -->
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Day 1 - March 15</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-blue-500 w-24">09:00 AM</span>
+                            <div>
+                                <h4 class="font-semibold">Opening Ceremony</h4>
+                                <p class="text-gray-400">Welcome address and keynote speech</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-500 w-24">10:30 AM</span>
+                            <div>
+                                <h4 class="font-semibold">Hackathon Begins</h4>
+                                <p class="text-gray-400">24-hour coding challenge kicks off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Day 2 - March 16</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-blue-500 w-24">09:00 AM</span>
+                            <div>
+                                <h4 class="font-semibold">Robotics Workshop</h4>
+                                <p class="text-gray-400">Hands-on session with robots</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-500 w-24">02:00 PM</span>
+                            <div>
+                                <h4 class="font-semibold">AI Workshop</h4>
+                                <p class="text-gray-400">Introduction to machine learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-envelope text-blue-500"></i>
+                                <span>contact@techphilia.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-phone text-blue-500"></i>
+                                <span>+1 234 567 890</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-location-dot text-blue-500"></i>
+                                <span>College Campus, City, Country</span>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                            <div class="flex gap-4">
+                                <a href="#" class="text-2xl text-gray-400 hover:text-blue-500 transition-colors">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-2xl text-gray-400 hover:text-blue-500 transition-colors">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-2xl text-gray-400 hover:text-blue-500 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-2xl text-gray-400 hover:text-blue-500 transition-colors">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-2 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Message</label>
+                                <textarea class="w-full px-4 py-2 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 h-32" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2024 TechPhilia 8.0. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
